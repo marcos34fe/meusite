@@ -1,151 +1,53 @@
-!-- Indica que o documento é um arquivo HTML. -->
 <!DOCTYPE html>
-
-<!-- Define a linguagem do conteúdo da página. -->
-<html lang="pt-br">
-
-<!-- Armazena informações sobre a página. -->
+<html lang="pt-BR">
 <head>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-	<!-- Conjunto de caracteres que contém acentuação e ç. -->
-	<meta charset="utf-8">
-
-	<!-- Configuração da janela de visualização ( responsividade ). -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- Importação do arquivo CSS. -->
-	<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
-
-	<!-- Título da aba do navegador -->
-	<title>Layout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meu Site</title>
 </head>
-
-<!-- Conteúdo apresentado na tela. -->
 <body>
-	
-<fieldset>
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Form Name -->
-<legend></legend>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Esta é a página inicial do nosso site.</p>
+    </section>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Nome:</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
+    <section id="about">
+        <h2>Sobre</h2>
+        <p>Aqui você pode saber mais sobre nós.</p>
+    </section>
 
-<!-- Multiple Checkboxes -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="checkboxes">Sexo</label>
-  <div class="col-md-4">
-  <div class="checkbox">
-    <label for="checkboxes-0">
-      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-      Masculino
-    </label>
-	</div>
-  <div class="checkbox">
-    <label for="checkboxes-1">
-      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="">
-      Feminino
-    </label>
-	</div>
-  </div>
-</div>
+    <section id="products">
+        <h2>Produtos</h2>
+        <p>Confira nossos produtos incríveis!</p>
+    </section>
 
-<!-- Button Drop Down -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="buttondropdown">Button Drop Down</label>
-  <div class="col-md-4">
-    <div class="input-group">
-      <input id="buttondropdown" name="buttondropdown" class="form-control" placeholder="placeholder" type="text">
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-          Action
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu pull-right">
-          <li><a href="#">Option one</a></li>
-          <li><a href="#">Option two</a></li>
-          <li><a href="#">Option three</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco através do formulário abaixo.</p>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
 
-
-
-	<!-- Agrupa os elementos que compõe o cabeçalho. -->
-	<header>
-		<img src="images (2).jpg" alt="logomarca" />
-
-		<button id="openMenu">&#9776;</button>
-	</header>
-
-	<!-- Agrupa links de navegação no site. -->
-	<nav id="menu">
-
-		<button id="closeMenu">X</button>
-
-		<a href="#">Home</a>
-		<a href="#">About</a>
-		<a href="#">Products</a>
-		<a href="">Contact</a>
-	</nav>
-
-	<!-- Agrupa o conteúdo principal da página ou aplicação. -->
-	<main>Main</main>
-
-	<!-- Agrupa informações e links relacionado ao conteúdo principal. -->
-	<aside>Aside</aside>
-
-	<!-- Agrupa informações de autoria, direitos autorais, contato, 
-		   mapa do site, links e documento relacionados. -->
-	<footer>Footer</footer>
-
-	<!-- Importação do arquivo JavaScript. -->
-	<script type="text/javascript" src="assets/js/script.js"></script>
-	<table>
-		<tr>
-			<td>
-				Tabela HTML
-			</td>
-		</tr>
-	</table>
-</body>	
-			</td>
-	</table>
-
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
 </body>
-	<table>
-		<thead>
-		  <tr>
-		    <th>Cidade</th>
-		    <th>Data</th>
-		  </tr>
-		</thead>
-		<tbody>
-		  <tr>
-		    <td>São paulo-SP</td>
-                    <td>01/10/2018</td>
-		  </tr>
-	          <tr>
-		    <td>rio de janeiro-RJ</td>
-		    <td>01/11/2018</td>
-		  </tr>
-		  <tr>
-		    <td>Belo Horizonte-MG</td>
-		    <td>01/12/2018</td>
-		  </tr>
-		  <tr>
-		    <td>Recife-PE</td>
-		    <td>01/01/2019</td>
-		  </tr>
-		</tbody>
-	    </table>
-	
+</html>
